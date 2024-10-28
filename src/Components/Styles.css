@@ -1,0 +1,25 @@
+/* Styles.css */
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scroll on body */
+}
+
+.my-scroll-container {
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Flexbox for child alignment */
+    flex-direction: column; /* Column layout */
+}
+
+.scrollable-content {
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 20px; /* Optional padding */
+    height: calc(100vh - 80px); /* Use full height of the viewport minus the height of the NavBar and OurServices */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.scrollable-content::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
